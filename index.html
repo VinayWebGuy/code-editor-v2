@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Editor with Monaco</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div id="editor-container">
+        <div id="htmlEditor" class="editor">
+            <div class="editor-title"> <i class="fa-brands fa-html5"></i>HTML</div>
+        </div>
+        <div id="cssEditor" class="editor">
+            <div class="editor-title"><i class="fa-brands fa-css3-alt"></i>CSS</div>
+        </div>
+        <div id="jsEditor" class="editor">
+            <div class="editor-title"><i class="fa-brands fa-js"></i> Javascript</div>
+        </div>
+    </div>
+
+    <iframe id="output"></iframe>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.33.0/min/vs/loader.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

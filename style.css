@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+#editor-container {
+  height: 100%;
+  display: flex;
+  width: 600px;
+  flex-direction: column;
+}
+
+.editor {
+  position: relative;
+  height: 33%;
+  border: 1px solid #ccc;
+}
+
+.editor-title {
+  background-color: #333;
+  color: white;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 5px;
+  font-size: 16px;
+}
+
+#output {
+  border: none;
+  height: 100%;
+  flex: 1;
+  width: calc(100vw - 600px);
+}
